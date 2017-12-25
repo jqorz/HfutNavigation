@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">在工大</string>
+    <string name="main_edtTxt_hint">输入待查询的地点</string>
+    <string name="toolbar_back">返回</string>
+    <string name="search_edtTxt_hint">搜索</string>
+
+    <string name="tip_clearHistory">清空搜索记录</string>
+</resources>

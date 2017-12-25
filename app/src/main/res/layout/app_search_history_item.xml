@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="?android:selectableItemBackground">
+
+
+    <ImageView
+        android:id="@+id/iv_History"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/icon_history" />
+
+    <TextView
+        android:id="@+id/tv_HistoryContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/iv_History"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+</RelativeLayout>

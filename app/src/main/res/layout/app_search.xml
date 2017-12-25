@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rv_Title"
+        style="@style/ToolBar">
+
+        <ImageView
+            android:id="@+id/iv_Back"
+            style="@style/ToolBar_iv_Left"
+            android:contentDescription="@string/toolbar_back" />
+
+        <EditText
+            android:id="@+id/edtTxt_Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/toolbar_title_haveBack_marginEnd"
+            android:layout_marginStart="@dimen/toolbar_title_haveBack_marginStart"
+            android:gravity="center_vertical"
+            android:hint="@string/main_edtTxt_hint"
+            android:inputType="textAutoComplete"
+            android:labelFor="@id/edtTxt_Search"
+            android:paddingEnd="35dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_Delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@id/edtTxt_Search"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="?android:actionBarItemBackground"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/icon_delete_white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_Search"
+            style="@style/ToolBar_iv_Right"
+            android:contentDescription="@string/toolbar_back"
+            android:src="@drawable/icon_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rv_Title">
+
+        <TextView
+            android:id="@+id/tv_History_Tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_background"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tip_clearHistory"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tv_History_Tip"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
